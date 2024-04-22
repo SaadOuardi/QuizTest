@@ -1,0 +1,250 @@
+/* ------------------------------------IMPORTATION------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* ------------------------------------VARRIABLES------------------------------------ */
+:root{
+
+    /* -----------BG COLORS----------- */
+    --primary-backgroundColor:black;
+    --secondary-backgroundColor:white;
+    /* -----------COLORS----------- */
+    --primary-color:black;
+    --secondary-color:white;
+
+    /* FONTS */
+        /* -----------FONT SIZES----------- */
+        --primary-font-size:black;
+        --secondary-font-size:white;
+
+        /* -----------FONT FAMILY----------- */
+        --primary-font-family: "Bebas Neue", sans-serif;
+        --secondary-font-family: "Bebas Neue", sans-serif;
+
+        /* -----------FONT WEIGHT----------- */
+        --primary-font-weight:800;
+        --secondary-font-weight: 600;
+
+};
+
+/* ------------------------------------INITIALISATION------------------------------------ */
+
+h1{
+    font-family:  "Bebas Neue", sans-serif;;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+header , footer{
+    height: fit-content;
+    background-color: black;
+    color: white;
+}
+
+img{
+    height: 80px;
+    width: 80px;
+}
+
+.bi{
+    height: 20px;
+    width: 20px;
+}
+a{
+    text-decoration: none;
+    color: gold;
+}
+button{
+    height: 50px;
+    width: fit-content;
+    padding: 2px 50px;
+    background-color: rgb(0, 106, 255);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+button:hover{
+    background-color: rgb(74, 150, 255);
+}
+
+input{
+    height: 50px;
+    width: 300px;
+    padding-left: 5px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+/* ------------------------------------HEADER------------------------------------ */
+.header{
+    padding: 10px 0 0 0;
+}
+.header-1{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    background-color: whitesmoke;
+    padding-bottom: 10px;
+}
+
+
+.header-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.company__container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+}
+
+.company__container img{
+    height: 50px;
+    width: 50px;
+}
+
+.user__container svg{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+.user__container svg:nth-child(3){
+    height: 20px;
+    width: 20px;
+}
+
+.header__navbar{
+    background-color: white;
+    cursor: pointer;
+}
+
+.header__navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__navbar ul li{
+    list-style: none;
+    height: 50px;
+    width: 100%;
+    padding: 5px 50px;
+    background-color: rgb(37, 23, 23);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header__navbar ul li:hover{
+    background-color: rgb(96, 96, 96);
+}
+.header__navbar ul li.active{
+    background-color: rgb(96, 96, 96);
+}
+
+/* ------------------------------------MAIN------------------------------------ */
+
+/* ------------------------------------SECTION------------------------------------ */
+.test__section{
+    background-color: rgb(109, 109, 109);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.test__container{
+    width: 400px;
+    background-color: aliceblue;
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 16px;
+    gap: 15px;
+}
+
+
+.test-title__container,
+.question-score__container,
+.test-question__container,
+.test-options__containe{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.test-question__container{
+    background-color: rgb(116, 255, 116);
+    color: black;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    cursor: help;
+}
+
+.question__container{
+    width: 100%;
+}
+
+
+.test-options__container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.test-option__container{
+    background-color: rgb(174, 174, 174);
+    color: black;
+    height: 50px;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.test-option__container:hover{
+    background-color: rgb(139, 139, 139);
+}
+
+.toggle__buttons{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    gap: 10px;
+}
+
+.toggle__buttons button {
+    width: 50%;
+}
+
+.toggle__buttons .skip-btn{
+    background-color: rgb(34, 34, 34);
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+}
+.toggle__buttons .skip-btn:hover{
+    background-color: rgb(68, 68, 68);
+}
+/* ------------------------------------FOOTER------------------------------------ */
